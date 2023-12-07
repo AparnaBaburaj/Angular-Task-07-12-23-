@@ -1,0 +1,19 @@
+
+<nav>
+  <a href="#">Home</a>
+
+</nav>
+
+<main>
+  <h1>EMPLOYEE LIST</h1>
+  <div class="item-card" *ngFor="let item of data; let i = index">
+    
+    <p>{{ item }} <button (click)="onDelete(i)">Delete</button></p>
+  </div>
+</main>
+
+
+
+<footer>
+  <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+</footer>
